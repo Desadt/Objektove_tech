@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kalkulacka.HelloController">
+   <children>
+      <TextField id="tf1" fx:id="tf1" layoutX="14.0" layoutY="14.0" />
+      <TextField id="tf2" fx:id="tf2" layoutX="14.0" layoutY="47.0" />
+      <Label id="lb1" fx:id="lb1" layoutX="14.0" layoutY="81.0" prefHeight="36.0" prefWidth="149.0" text="Result">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="187.0" layoutY="14.0" mnemonicParsing="false" onAction="#scitanie" text="+" />
+      <Button layoutX="187.0" layoutY="47.0" mnemonicParsing="false" onAction="#nasobenie" prefHeight="25.0" prefWidth="24.0" text="*" />
+      <Button layoutX="227.0" layoutY="14.0" mnemonicParsing="false" onAction="#odcitanie" text="-" />
+      <Button layoutX="227.0" layoutY="47.0" mnemonicParsing="false" onAction="#celo_delenie" text="/" />
+      <Button layoutX="259.0" layoutY="47.0" mnemonicParsing="false" onAction="#desat_delenie" text="/." />
+   </children>
+</Pane>
