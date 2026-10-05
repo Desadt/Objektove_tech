@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semafor.HelloController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#draw" text="Draw Semafor" />
+            <Button mnemonicParsing="false" onAction="#zmenStav" text="Manual" />
+            <Button mnemonicParsing="false" onAction="#auto" text="Auto" />
+            <Button mnemonicParsing="false" onAction="#turnOff" text="Turn off" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
