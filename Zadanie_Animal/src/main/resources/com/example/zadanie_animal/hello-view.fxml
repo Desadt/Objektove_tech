@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.zadanie_animal.HelloController"
+      prefWidth="800"
+      prefHeight="550"
+      spacing="10">
+
+    <HBox alignment="CENTER"
+          spacing="10"
+          style="-fx-padding: 10;">
+
+        <Button text="Pridať bylinožravca"
+                onAction="#addHerbivore"/>
+
+        <Button text="Pridať mäsožravca"
+                onAction="#addCarnivore"/>
+
+        <Button text="Zmeniť smer"
+                onAction="#changeDirection"/>
+
+        <Button fx:id="btnStop"
+                text="Zastaviť"
+                onAction="#stopAnimals"/>
+
+    </HBox>
+
+    <Pane fx:id="plocha"
+          prefWidth="800"
+          prefHeight="480"
+          VBox.vgrow="ALWAYS"
+          style="-fx-background-color: #eeeeee;"/>
+
+</VBox>
